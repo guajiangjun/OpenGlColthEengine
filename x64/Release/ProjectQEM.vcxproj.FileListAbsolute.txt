@@ -1,0 +1,4 @@
+E:\CG_Projects_E\Assign_Depoly\12335048_ShiXiwen_Homework5_QemSimplification\codeQEM\ProjectQEM\x64\Release\ProjectQEM.exe
+E:\Desktop\CG_Projects\Cloth\mass_spring\ProjectQEM\x64\Release\ProjectOpenGl.exe
+E:\Desktop\CG_Projects\Cloth\mass_spring\ProjectCode\x64\Release\ProjectOpenGl.exe
+E:\Desktop\CG_Projects\ColthProjectCode\x64\Release\ProjectOpenGl.exe

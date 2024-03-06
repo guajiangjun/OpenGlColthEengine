@@ -1,0 +1,59 @@
+﻿  glad.c
+  main.cpp
+E:\Desktop\CG_Projects\Cloth\mass_spring\extern\include\Eigen\src\Core\arch\Default\Half.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+E:\Desktop\CG_Projects\Cloth\mass_spring\extern\include\Eigen\src\Core\arch\Default\BFloat16.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+E:\Desktop\CG_Projects\Cloth\mass_spring\extern\include\Eigen\src\Core\arch\Default\GenericPacketMathFunctions.h(676,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+E:\Desktop\CG_Projects\Cloth\mass_spring\ProjectCode\mesh_m.h(16,1): warning C4005: “INFINITY”: 宏重定义
+D:\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_math.h(88): message : 参见“INFINITY”的前一个定义
+E:\Desktop\CG_Projects\Cloth\mass_spring\ProjectCode\mesh_m.h(136,41): warning C4244: “参数”: 从“Eigen::Index”转换到“GLsizei”，可能丢失数据
+E:\Desktop\CG_Projects\Cloth\mass_spring\ProjectCode\simulation.h(86,35): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\Desktop\CG_Projects\Cloth\mass_spring\ProjectCode\simulation.h(95,22): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+E:\Desktop\CG_Projects\Cloth\mass_spring\ProjectCode\simulation.h(96,26): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+E:\Desktop\CG_Projects\Cloth\mass_spring\ProjectCode\simulation.h(104,26): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+E:\Desktop\CG_Projects\Cloth\mass_spring\ProjectCode\simulation.h(151,15): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+OpenMeshCore.lib(omstream.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“0”不匹配值“2”(main.obj 中)
+OpenMeshCore.lib(omstream.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MD_DynamicRelease”不匹配值“MDd_DynamicDebug”(main.obj 中)
+OpenMeshCore.lib(BaseProperty.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“0”不匹配值“2”(main.obj 中)
+OpenMeshCore.lib(BaseProperty.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MD_DynamicRelease”不匹配值“MDd_DynamicDebug”(main.obj 中)
+OpenMeshCore.lib(IOManager.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“0”不匹配值“2”(main.obj 中)
+OpenMeshCore.lib(IOManager.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MD_DynamicRelease”不匹配值“MDd_DynamicDebug”(main.obj 中)
+OpenMeshCore.lib(ArrayKernel.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“0”不匹配值“2”(main.obj 中)
+OpenMeshCore.lib(ArrayKernel.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MD_DynamicRelease”不匹配值“MDd_DynamicDebug”(main.obj 中)
+OpenMeshCore.lib(OBJReader.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“0”不匹配值“2”(main.obj 中)
+OpenMeshCore.lib(OBJReader.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MD_DynamicRelease”不匹配值“MDd_DynamicDebug”(main.obj 中)
+OpenMeshCore.lib(OFFReader.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“0”不匹配值“2”(main.obj 中)
+OpenMeshCore.lib(OFFReader.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MD_DynamicRelease”不匹配值“MDd_DynamicDebug”(main.obj 中)
+OpenMeshCore.lib(PLYReader.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“0”不匹配值“2”(main.obj 中)
+OpenMeshCore.lib(PLYReader.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MD_DynamicRelease”不匹配值“MDd_DynamicDebug”(main.obj 中)
+OpenMeshCore.lib(STLReader.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“0”不匹配值“2”(main.obj 中)
+OpenMeshCore.lib(STLReader.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MD_DynamicRelease”不匹配值“MDd_DynamicDebug”(main.obj 中)
+OpenMeshCore.lib(OMReader.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“0”不匹配值“2”(main.obj 中)
+OpenMeshCore.lib(OMReader.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MD_DynamicRelease”不匹配值“MDd_DynamicDebug”(main.obj 中)
+OpenMeshCore.lib(OBJWriter.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“0”不匹配值“2”(main.obj 中)
+OpenMeshCore.lib(OBJWriter.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MD_DynamicRelease”不匹配值“MDd_DynamicDebug”(main.obj 中)
+OpenMeshCore.lib(OFFWriter.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“0”不匹配值“2”(main.obj 中)
+OpenMeshCore.lib(OFFWriter.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MD_DynamicRelease”不匹配值“MDd_DynamicDebug”(main.obj 中)
+OpenMeshCore.lib(STLWriter.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“0”不匹配值“2”(main.obj 中)
+OpenMeshCore.lib(STLWriter.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MD_DynamicRelease”不匹配值“MDd_DynamicDebug”(main.obj 中)
+OpenMeshCore.lib(OMWriter.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“0”不匹配值“2”(main.obj 中)
+OpenMeshCore.lib(OMWriter.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MD_DynamicRelease”不匹配值“MDd_DynamicDebug”(main.obj 中)
+OpenMeshCore.lib(PLYWriter.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“0”不匹配值“2”(main.obj 中)
+OpenMeshCore.lib(PLYWriter.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MD_DynamicRelease”不匹配值“MDd_DynamicDebug”(main.obj 中)
+OpenMeshCore.lib(VTKWriter.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“0”不匹配值“2”(main.obj 中)
+OpenMeshCore.lib(VTKWriter.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MD_DynamicRelease”不匹配值“MDd_DynamicDebug”(main.obj 中)
+OpenMeshCore.lib(TriConnectivity.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“0”不匹配值“2”(main.obj 中)
+OpenMeshCore.lib(TriConnectivity.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MD_DynamicRelease”不匹配值“MDd_DynamicDebug”(main.obj 中)
+OpenMeshCore.lib(BaseReader.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“0”不匹配值“2”(main.obj 中)
+OpenMeshCore.lib(BaseReader.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MD_DynamicRelease”不匹配值“MDd_DynamicDebug”(main.obj 中)
+OpenMeshCore.lib(BaseWriter.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“0”不匹配值“2”(main.obj 中)
+OpenMeshCore.lib(BaseWriter.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MD_DynamicRelease”不匹配值“MDd_DynamicDebug”(main.obj 中)
+OpenMeshCore.lib(BinaryHelper.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“0”不匹配值“2”(main.obj 中)
+OpenMeshCore.lib(BinaryHelper.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MD_DynamicRelease”不匹配值“MDd_DynamicDebug”(main.obj 中)
+OpenMeshCore.lib(OMFormat.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“0”不匹配值“2”(main.obj 中)
+OpenMeshCore.lib(OMFormat.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MD_DynamicRelease”不匹配值“MDd_DynamicDebug”(main.obj 中)
+OpenMeshCore.lib(PropertyCreator.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“0”不匹配值“2”(main.obj 中)
+OpenMeshCore.lib(PropertyCreator.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MD_DynamicRelease”不匹配值“MDd_DynamicDebug”(main.obj 中)
+OpenMeshCore.lib(PolyConnectivity.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“0”不匹配值“2”(main.obj 中)
+OpenMeshCore.lib(PolyConnectivity.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MD_DynamicRelease”不匹配值“MDd_DynamicDebug”(main.obj 中)
+LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+E:\Desktop\CG_Projects\Cloth\mass_spring\ProjectCode\x64\Debug\ProjectOpenGl.exe : fatal error LNK1319: 检测到 44 个不匹配项
