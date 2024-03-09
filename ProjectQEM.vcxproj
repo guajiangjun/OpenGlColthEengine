@@ -152,10 +152,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="include\AppTest.h" />
     <ClInclude Include="include\App_simluateCloth_quadMesh_massSpring.h" />
     <ClInclude Include="include\camera_m.h" />
     <ClInclude Include="include\cloth_sheet.h" />
     <ClInclude Include="include\cube.h" />
+    <ClInclude Include="include\Drawer.h" />
     <ClInclude Include="include\EigenTypes.h" />
     <ClInclude Include="include\Engine.h" />
     <ClInclude Include="include\ground.h" />
@@ -166,6 +168,7 @@
     <ClInclude Include="include\simulation.h" />
     <ClInclude Include="include\simulation2.h" />
     <ClInclude Include="include\util_simulation.h" />
+    <ClInclude Include="include\ray.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\glad.c" />

@@ -23,7 +23,9 @@ public:
 	RenderContex renderContex;
 
 public:
-	Engine() {};
+	Engine() {
+		
+	};
 	~Engine() {};
 
 	virtual void before_renderLoop() {};
@@ -72,9 +74,7 @@ public:
 
 
 			renderContex.processInput(window);
-			if (renderContex.mode_view) {
-				view = renderContex.camera.GetViewMatrix();
-			}
+			
 
 
 
@@ -82,6 +82,9 @@ public:
 			glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 			model = glm::mat4(1.0f);
+			if (renderContex.mode_view) {
+				view = renderContex.camera.GetViewMatrix();
+			}
 			projection = glm::perspective(glm::radians(renderContex.camera.Zoom), (float)renderContex.SCR_WIDTH / (float)renderContex.SCR_HEIGHT, 0.1f, 100.0f);
 
 			render_inLoop();

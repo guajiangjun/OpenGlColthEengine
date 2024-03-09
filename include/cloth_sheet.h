@@ -6,7 +6,7 @@
 #include <Eigen\Dense>
 #include <iostream>  
 
-
+#include"ray.h"
 
 #define my_data_type float
 
@@ -101,7 +101,16 @@ public:
 	
 	}
 
+	int indice_of_vertex_selected_by_ray(const Ray& ray) {
+		vector<float> distances;
+		for (Eigen::Vector3f& point : points) {
+			distances.push_back(ray.compute_distance(point));
+		}
+		auto minIt = std::min_element(distances.begin(), distances.end());
 
+		// 计算最小元素的索引
+		return std::distance(distances.begin(), minIt);
+	}
 
 	void updateVertices(const Eigen::VectorXf& q) {
 		// 绑定VBO并填充数据

@@ -99,8 +99,8 @@ public:
 		glDisable(GL_CULL_FACE);
 	}
 	~Cube() {
-		glDeleteVertexArrays(1, &this->VAO);
-		glDeleteVertexArrays(1, &this->VBO);
+		//glDeleteVertexArrays(1, &this->VAO);
+		//glDeleteVertexArrays(1, &this->VBO);
 	}
 
 

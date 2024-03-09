@@ -57,6 +57,15 @@
     <ClInclude Include="include\mesh_m.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="include\Drawer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ray.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AppTest.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\glad.c">

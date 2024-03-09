@@ -2,11 +2,14 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include"camera_m.h"
+#include"ray.h"
 
 class RenderContex {
 public:
 	static unsigned int SCR_WIDTH;// = 1800;
 	static unsigned int SCR_HEIGHT;// = 1600;
+
+
 
 	// camera
 	static Camera camera;// = Camera(glm::vec3(0.0f, 0.0f, 3.0f));
@@ -22,6 +25,9 @@ public:
 	static bool mode_view;// = true;
 	static bool simulating;// = true;
 	static bool restart;// = true;
+	static bool select_mode;// = false;
+	
+
 
 public:
 	void processInput(GLFWwindow* window)
@@ -37,7 +43,8 @@ public:
 		}
 		else {
 			glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
-			glfwSetCursorPosCallback(window, 0);
+			glfwSetCursorPosCallback(window, mouse_callback);
+			//glfwSetCursorPosCallback(window, 0);
 			firstMouse = true;
 		}
 	}
@@ -71,6 +78,9 @@ public:
 		if (key == GLFW_KEY_R) {
 			restart = true; // toggle animation
 		}
+		if (key == GLFW_KEY_V) {
+			select_mode = true; // toggle animation
+		}
 
 	}
 
@@ -89,6 +99,8 @@ public:
 		float xpos = static_cast<float>(xposIn);
 		float ypos = static_cast<float>(yposIn);
 
+		
+
 		if (firstMouse)
 		{
 			lastX = xpos;
@@ -103,6 +115,30 @@ public:
 		lastY = ypos;
 
 		camera.ProcessMouseMovement(xoffset, yoffset);
+	}
+
+	
+	static glm::vec2 getMousePosition() {
+		return glm::vec2(lastX, lastY);
+	}
+	
+	Ray getRay(const glm::mat4& view, const glm::mat4& projection) {
+		glm::vec2 mousePos = this->getMousePosition();
+
+		float mouseX = mousePos.x / (SCR_WIDTH * 0.5f) - 1.0f;
+		float mouseY = mousePos.y / (SCR_HEIGHT * 0.5f) - 1.0f;
+		glm::vec4 screenPos = glm::vec4(mouseX, -mouseY, 1.0f, 1.0f);
+
+		glm::vec4 worldPos = glm::inverse(projection * view) * screenPos;
+
+
+		glm::vec3 mouseWorld = glm::vec3(worldPos / worldPos.w);
+
+
+		Eigen::Vector3f dir = eigenVector(mouseWorld - camera.Position);
+		Eigen::Vector3f camerPos = eigenVector(camera.Position);
+
+		return Ray(camerPos, dir);
 	}
 
 	// glfw: whenever the mouse scroll wheel scrolls, this callback is called
@@ -123,6 +159,9 @@ bool RenderContex::firstMouse = true;
 bool RenderContex::mode_view = true;
 bool RenderContex::simulating = true;
 bool RenderContex::restart = false;
+bool RenderContex::select_mode = false;
+
+
 
 
 

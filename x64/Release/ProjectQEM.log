@@ -1,2 +1,29 @@
 ﻿D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: 中间目录(x64\Release\)包含从另一个项目(ProjectQEM.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
+  main.cpp
+E:\Desktop\CG_Projects\ColthProjectCode\extern\include\Eigen\src\Core\arch\Default\Half.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+E:\Desktop\CG_Projects\ColthProjectCode\extern\include\Eigen\src\Core\arch\Default\BFloat16.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+E:\Desktop\CG_Projects\ColthProjectCode\extern\include\Eigen\src\Core\arch\Default\GenericPacketMathFunctions.h(676,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+E:\Desktop\CG_Projects\ColthProjectCode\include\Drawer.h(66,1): warning C4267: “参数”: 从“size_t”转换到“GLsizei”，可能丢失数据
+E:\Desktop\CG_Projects\ColthProjectCode\include\Engine.h(49,23): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+E:\Desktop\CG_Projects\ColthProjectCode\include\Engine.h(50,27): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+E:\Desktop\CG_Projects\ColthProjectCode\include\Engine.h(57,27): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+E:\Desktop\CG_Projects\ColthProjectCode\include\cloth_sheet.h(54,18): warning C4244: “参数”: 从“double”转换到“const float”，可能丢失数据
+E:\Desktop\CG_Projects\ColthProjectCode\include\cloth_sheet.h(112,23): warning C4244: “return”: 从“__int64”转换到“int”，可能丢失数据
+E:\Desktop\CG_Projects\ColthProjectCode\include\cloth_sheet.h(146,37): warning C4244: “参数”: 从“Eigen::EigenBase<Derived>::Index”转换到“GLsizei”，可能丢失数据
+          with
+          [
+              Derived=Eigen::Matrix<int,-1,-1,0,-1,-1>
+          ]
+E:\Desktop\CG_Projects\ColthProjectCode\include\App_simluateCloth_quadMesh_massSpring.h(28,12): warning C4305: “初始化”: 从“double”到“float”截断
+E:\Desktop\CG_Projects\ColthProjectCode\include\App_simluateCloth_quadMesh_massSpring.h(29,11): warning C4305: “初始化”: 从“double”到“float”截断
+E:\Desktop\CG_Projects\ColthProjectCode\include\App_simluateCloth_quadMesh_massSpring.h(33,17): warning C4305: “初始化”: 从“double”到“float”截断
+E:\Desktop\CG_Projects\ColthProjectCode\include\App_simluateCloth_quadMesh_massSpring.h(85,36): warning C4244: “参数”: 从“Eigen::Index”转换到“unsigned int”，可能丢失数据
+E:\Desktop\CG_Projects\ColthProjectCode\include\App_simluateCloth_quadMesh_massSpring.h(111,1): warning C4305: “参数”: 从“double”到“float”截断
+E:\Desktop\CG_Projects\ColthProjectCode\include\AppTest.h(17,1): warning C4305: “参数”: 从“double”到“float”截断
+E:\Desktop\CG_Projects\ColthProjectCode\include\AppTest.h(33,1): warning C4305: “参数”: 从“double”到“float”截断
+  正在生成代码
+  484 of 1005 functions (48.2%) were compiled, the rest were copied from previous compilation.
+    295 functions were new in current compilation
+    87 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
   ProjectQEM.vcxproj -> E:\Desktop\CG_Projects\ColthProjectCode\x64\Release\ProjectOpenGl.exe

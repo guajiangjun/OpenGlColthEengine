@@ -16,26 +16,11 @@ namespace Eigen {
     //sparse types
    
     using SparseMatrixf = Eigen::SparseMatrix<float>;
+    using Point3 = Eigen::Vector3f;
 
 }
 
-template<typename T>
-void printMatRow(const T& mat,int n) {
-    for (int i = 0;i < n;i++) {
-        cout << i << ":\t" << mat.row(i) << endl;
-    }
-}
 
-
-template<typename T>
-void printMatCol(const T& mat, int n) {
-    for (int i = 0;i < n;i++) {
-        cout << i << ":\t" << mat.col(i).transpose() << endl;
-    }
-}
-void printQ(const Eigen::VectorXf& q) {
-    for (int i = 0;i < q.size()/3;i++) {
-        cout << i << ":\t";
-        cout << q.segment<3>(3 * i).transpose() << endl;
-    }
+Eigen::Point3 eigenVector(const glm::vec3& vec) {
+    return Eigen::Point3(vec.x, vec.y, vec.z);
 }
