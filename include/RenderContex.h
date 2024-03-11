@@ -38,13 +38,9 @@ public:
 		if (mode_view) {
 			glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 			processInputForView(window);
-			glfwSetCursorPosCallback(window, mouse_callback);
-			//view = camera.GetViewMatrix();
 		}
 		else {
 			glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
-			glfwSetCursorPosCallback(window, mouse_callback);
-			//glfwSetCursorPosCallback(window, 0);
 			firstMouse = true;
 		}
 	}

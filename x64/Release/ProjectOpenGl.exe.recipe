@@ -5,7 +5,23 @@
       <FullPath>E:\Desktop\CG_Projects\ColthProjectCode\x64\Release\ProjectOpenGl.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
-  <ContentFiles />
+  <ContentFiles>
+    <ContentFile>
+      <FullPath>E:\Desktop\CG_Projects\ColthProjectCode\extern\include\imgui\backends\imgui_impl_glfw.cpp</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>E:\Desktop\CG_Projects\ColthProjectCode\extern\include\imgui\backends\imgui_impl_opengl3.cpp</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>E:\Desktop\CG_Projects\ColthProjectCode\src\main.cpp</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>E:\Desktop\CG_Projects\ColthProjectCode\extern\include\imgui\backends\imgui_impl_glfw.h</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>E:\Desktop\CG_Projects\ColthProjectCode\extern\include\imgui\backends\imgui_impl_opengl3_loader.h</FullPath>
+    </ContentFile>
+  </ContentFiles>
   <SatelliteDlls />
   <NonRecipeFileRefs />
 </Project>

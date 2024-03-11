@@ -13,7 +13,7 @@ class AppTest :public Engine {
 public:
 	AppTest() {}
 	~AppTest() {}
-	void before_renderLoop() {
+	void before_renderLoop() override {
 		ground = Ground(1, -0.8);
 		ground.setupVAO();
 		pureColorShader = Shader(
@@ -23,7 +23,7 @@ public:
 		cloth = Cloth(20);
 
 	}
-	void render_inLoop() {
+	void render() override {
 		pureColorShader.use();
 		pureColorShader.setMat4("model", model);
 		pureColorShader.setMat4("view", view);

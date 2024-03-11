@@ -140,7 +140,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);_USE_MATH_DEFINES</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(ProjectDir)extern\include;$(ProjectDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)extern\include;$(ProjectDir)extern\include\imgui\backends;$(ProjectDir)extern\include\imgui;$(ProjectDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -152,8 +152,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="extern\include\imgui\backends\imgui_impl_glfw.h">
+      <DeploymentContent>true</DeploymentContent>
+    </ClInclude>
+    <ClInclude Include="extern\include\imgui\backends\imgui_impl_opengl3.h" />
+    <ClInclude Include="extern\include\imgui\backends\imgui_impl_opengl3_loader.h">
+      <DeploymentContent>true</DeploymentContent>
+    </ClInclude>
+    <ClInclude Include="extern\include\imgui\imconfig.h" />
+    <ClInclude Include="extern\include\imgui\imgui.h" />
+    <ClInclude Include="extern\include\imgui\imgui_internal.h" />
+    <ClInclude Include="extern\include\imgui\imstb_rectpack.h" />
+    <ClInclude Include="extern\include\imgui\imstb_textedit.h" />
+    <ClInclude Include="extern\include\imgui\imstb_truetype.h" />
     <ClInclude Include="include\AppTest.h" />
     <ClInclude Include="include\App_simluateCloth_quadMesh_massSpring.h" />
+    <ClInclude Include="include\App_simluateCloth_triMesh_massSpring.h" />
     <ClInclude Include="include\camera_m.h" />
     <ClInclude Include="include\cloth_sheet.h" />
     <ClInclude Include="include\cube.h" />
@@ -171,8 +185,21 @@
     <ClInclude Include="include\ray.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="extern\include\imgui\backends\imgui_impl_glfw.cpp">
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="extern\include\imgui\backends\imgui_impl_opengl3.cpp">
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="extern\include\imgui\imgui.cpp" />
+    <ClCompile Include="extern\include\imgui\imgui_demo.cpp" />
+    <ClCompile Include="extern\include\imgui\imgui_draw.cpp" />
+    <ClCompile Include="extern\include\imgui\imgui_tables.cpp" />
+    <ClCompile Include="extern\include\imgui\imgui_widgets.cpp" />
     <ClCompile Include="src\glad.c" />
-    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\main.cpp">
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="shaders\light.frag" />

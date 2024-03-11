@@ -95,10 +95,12 @@ public:
 		std::thread simulation_thread(&AppClothQuadMassSpring::simulate, this);
 		simulation_thread.detach();
 
+	
+
 
 	};
 
-	void render_inLoop() override {
+	void render() override {
 
 		pureColorShader.use();
 
@@ -118,7 +120,9 @@ public:
 		pureColorShader.setVec3("aColor", 1.0f, 0.5f, 0.2f);
 		cloth.Draw(3.0f);
 
-
+		ImGui::Begin("My name is window, ImGUI window");
+		ImGui::Text("Hello there adventurer!");
+		ImGui::End();
 	};
 
 	void simulate_restart_handle() override {
