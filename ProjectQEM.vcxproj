@@ -141,6 +141,8 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);_USE_MATH_DEFINES</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(ProjectDir)extern\include;$(ProjectDir)extern\include\imgui\backends;$(ProjectDir)extern\include\imgui;$(ProjectDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <OpenMPSupport>true</OpenMPSupport>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -152,6 +154,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="extern\ImGuiFileBrowser.h" />
     <ClInclude Include="extern\include\imgui\backends\imgui_impl_glfw.h">
       <DeploymentContent>true</DeploymentContent>
     </ClInclude>
@@ -165,7 +168,7 @@
     <ClInclude Include="extern\include\imgui\imstb_rectpack.h" />
     <ClInclude Include="extern\include\imgui\imstb_textedit.h" />
     <ClInclude Include="extern\include\imgui\imstb_truetype.h" />
-    <ClInclude Include="include\AppTest.h" />
+    <ClInclude Include="include\App_RayCast_MousePicking.h" />
     <ClInclude Include="include\App_simluateCloth_quadMesh_massSpring.h" />
     <ClInclude Include="include\App_simluateCloth_triMesh_massSpring.h" />
     <ClInclude Include="include\camera_m.h" />
@@ -181,10 +184,12 @@
     <ClInclude Include="include\shader_m.h" />
     <ClInclude Include="include\simulation.h" />
     <ClInclude Include="include\simulation2.h" />
+    <ClInclude Include="include\stb_image.h" />
     <ClInclude Include="include\util_simulation.h" />
     <ClInclude Include="include\ray.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="extern\ImGuiFileBrowser.cpp" />
     <ClCompile Include="extern\include\imgui\backends\imgui_impl_glfw.cpp">
       <DeploymentContent>true</DeploymentContent>
     </ClCompile>
@@ -206,8 +211,8 @@
     <None Include="shaders\light.vert" />
     <None Include="shaders\pure_color.frag" />
     <None Include="shaders\pure_color.vert" />
-    <None Include="shaders\shader.frag" />
-    <None Include="shaders\shader.vert" />
+    <None Include="shaders\phong_shader.frag" />
+    <None Include="shaders\phong_shader.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

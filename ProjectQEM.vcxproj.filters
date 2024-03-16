@@ -63,7 +63,7 @@
     <ClInclude Include="include\ray.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\AppTest.h">
+    <ClInclude Include="include\App_RayCast_MousePicking.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\App_simluateCloth_triMesh_massSpring.h">
@@ -96,6 +96,12 @@
     <ClInclude Include="extern\include\imgui\backends\imgui_impl_glfw.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="include\stb_image.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="extern\ImGuiFileBrowser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\glad.c">
@@ -125,6 +131,9 @@
     <ClCompile Include="extern\include\imgui\backends\imgui_impl_glfw.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="extern\ImGuiFileBrowser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="shaders\light.frag">
@@ -139,10 +148,10 @@
     <None Include="shaders\pure_color.vert">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="shaders\shader.frag">
+    <None Include="shaders\phong_shader.frag">
       <Filter>资源文件</Filter>
     </None>
-    <None Include="shaders\shader.vert">
+    <None Include="shaders\phong_shader.vert">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>

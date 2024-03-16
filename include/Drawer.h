@@ -6,6 +6,55 @@ public:
 	~Drawer() {}
 public:
 
+	void Draw(
+		Eigen::MatrixXf V,   // shape:	# 3 x vertices
+		Eigen::MatrixXi F,	 // shape:	# 3 x faces
+		Eigen::MatrixXf N	 // shape:	# 3 x vertices
+	) {
+
+		unsigned int VAO;
+		unsigned int VBO;
+		unsigned int VBO_N;
+		unsigned int EBO;
+
+		glGenVertexArrays(1, &VAO);
+		glBindVertexArray(VAO);
+
+		// 创建并绑定 VBO
+		glGenBuffers(1, &VBO);
+		glBindBuffer(GL_ARRAY_BUFFER, VBO);
+		glBufferData(GL_ARRAY_BUFFER, V.size() * sizeof(float), V.data(), GL_STATIC_DRAW);
+
+		// 设置顶点属性指针
+		glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, nullptr);
+		glEnableVertexAttribArray(0);
+
+		// 创建并绑定 VBO
+		glGenBuffers(1, &VBO_N);
+		glBindBuffer(GL_ARRAY_BUFFER, VBO_N);
+		glBufferData(GL_ARRAY_BUFFER, N.size() * sizeof(float), N.data(), GL_STATIC_DRAW);
+
+		// 设置顶点属性指针
+		glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 0, nullptr);
+		glEnableVertexAttribArray(1);
+
+
+		// 创建并绑定 EBO
+		glGenBuffers(1, &EBO);
+		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+		glBufferData(GL_ELEMENT_ARRAY_BUFFER, F.size() * sizeof(int), F.data(), GL_STATIC_DRAW);
+
+		glDrawElements(GL_TRIANGLES, F.size(), GL_UNSIGNED_INT, 0);
+		//glDrawElements(GL_LINES, F.size(), GL_UNSIGNED_INT, 0);
+
+
+		glBindVertexArray(0);
+
+		glDeleteVertexArrays(1, &VAO);
+		glDeleteBuffers(1, &VBO);
+		glDeleteBuffers(1, &VBO_N);
+		glDeleteBuffers(1, &EBO);
+	}
 
 	// draw single line
 	void Draw(const Line& line, float linewidth = 5.0f) {

@@ -153,7 +153,7 @@ float RenderContex::lastY = SCR_HEIGHT / 2.0f;
 bool RenderContex::firstMouse = true;
 
 bool RenderContex::mode_view = true;
-bool RenderContex::simulating = true;
+bool RenderContex::simulating = false;
 bool RenderContex::restart = false;
 bool RenderContex::select_mode = false;
 

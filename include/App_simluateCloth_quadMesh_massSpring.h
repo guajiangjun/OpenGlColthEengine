@@ -41,7 +41,7 @@ public: // objects and shaders
 	Ground ground;
 
 
-	Shader pureColorShader;
+	
 public:
 	AppClothQuadMassSpring() {
 
@@ -54,10 +54,7 @@ public:
 		ground = Ground(ground_size, ground_y);
 		ground.setupVAO();
 
-		pureColorShader = Shader(
-			"shaders/pure_color.vert", 
-			"shaders/pure_color.frag"
-		);
+		
 
 		cloth = Cloth(30);
 
@@ -91,33 +88,22 @@ public:
 		qdot = P * qdot;
 		M = P * M * P.transpose();
 
-		//std::thread simulation_thread(simulate);
-		std::thread simulation_thread(&AppClothQuadMassSpring::simulate, this);
-		simulation_thread.detach();
-
-	
-
-
+		renderContex.simulating = true;
 	};
 
 	void render() override {
 
-		pureColorShader.use();
-
-		// setup shader
-		pureColorShader.setMat4("model", model);
-		pureColorShader.setMat4("view", view);
-		pureColorShader.setMat4("projection", projection);
+		defaultPureColorShader.use();
 
 		// draw ground
-		pureColorShader.setVec3("aColor", 0.502, 0.502, 0.502);
+		defaultPureColorShader.setVec3("aColor", 0.502, 0.502, 0.502);
 		ground.draw();
 
 		// update cloth vertices
 		cloth.updateVertices(P.transpose() * q + x0);
 
 		// draw cloth
-		pureColorShader.setVec3("aColor", 1.0f, 0.5f, 0.2f);
+		defaultPureColorShader.setVec3("aColor", 1.0f, 0.5f, 0.2f);
 		cloth.Draw(3.0f);
 
 		ImGui::Begin("My name is window, ImGUI window");
